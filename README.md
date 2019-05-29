@@ -88,9 +88,9 @@ Frame work for SPT development
 
 In this github repo, there should be [at minimum] the following items:
 
-> **evans_SPT_lib.py** : The main library for developed software.
-> **evans_recommended_SPT_tutorial.ipynb** : The document that outlines the recommended SPT analysis pipeline.
-> **evans_trackpy_analysis.ipynb** : overview of explorative data analysis of SPT data using the trackpy package.
+> **evans_SPT_lib.py** : The main library for developed software.  
+> **evans_recommended_SPT_tutorial.ipynb** : The document that outlines the recommended SPT analysis pipeline.  
+> **evans_trackpy_analysis.ipynb** : overview of explorative data analysis of SPT data using the trackpy package.  
 
 # Methods
 

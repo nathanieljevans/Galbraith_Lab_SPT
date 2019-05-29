@@ -29,7 +29,9 @@ Galbraith Lab Data Aquisition and specifics:
 - Cell Type: Neuron   
 - Sample source: Mouse  
 
+
 $$ Diffusion \ Coefficient \ (D) = \frac{k_B \ T}{6 \pi na} \\ where: \ n = fluid \ viscosity \\ a = particle \ diameter \\ T = Temperature  $$
+
 
 - Actin Diffusion Coefficient: 3 - 30 ??m^2/s [source](https://bionumbers.hms.harvard.edu/bionumber.aspx?id=112133)  
 - Numerical Aperture: 1.47   
@@ -105,7 +107,7 @@ Results from Single Particle Tracking (SPT) are an inherently difficult to valid
 To **simulate data**, requires producing a ground truth of hypothetical (1) linked trajectories, (2) particle positions [in time] and (3) images. From these three components, an SPT algorithm can be tested by running localization and linking methods on the simulated images, and then comparing (2) and (3) to the SPT results. This is commonly done using a metric such as the [jacaard index](https://en.wikipedia.org/wiki/Jaccard_index) to summarize linking/localization accuracy. The underlying issue with this method is that simulated data itself takes a myriad of parameters and assumptions, many of which, we may not know, or cannot accurately simulate. This indicates that simulated data is at risk for significant bias, and may not reflect our real world data; In such a case, the reported accuracy of simulated data would not reflect accuracy of real data. One example of this, especially relevant to this rotation, is the assumption of brownian-motion / random-walk vs evective flow. In many literature simulations, data was simulated as random walk, and thus algorithm success is known to perform well in these cases, however, in evective flow a particle's behavior may change drastically, resulting in wildly different linking. This may produce results indicative of random walk when ground truth is evective. The important questions to ask when simulated data are:
 
 - What assumptions does this simulation have?
-- Do these assumptions fit the real-world / intended-purpose data? 
+- Do these assumptions fit the real-world / intended-purpose data?
 - When is good, good enough?
   - Analysis and summary metrics are the end-goal results of these tasks, so what linking accuracy is sufficient for our use-case?
   - How are the summary results affected by improper linking?

@@ -1,3 +1,7 @@
+[![DOI](https://zenodo.org/badge/185686549.svg)](https://zenodo.org/badge/latestdoi/185686549)
+
+
+
 # Galbraith_Lab_SPT
 
 # Overview
